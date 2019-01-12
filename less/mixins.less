@@ -1,1 +1,18 @@
 // Mixins in here
+.layout(@j-content: space-between, @a-items: center) {
+  display: flex;
+  justify-content: @j-content;
+  align-items: @a-items;
+}
+
+.round-borders(@radius: 10px) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+.main-btn() {
+  color: @white;
+  background-color: @eastern-blue;
+  .round-borders;
+}
